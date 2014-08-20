@@ -41,7 +41,6 @@
     [gameState setBool:false forKey:@"movescoreten"];
     [gameState setBool:false forKey:@"movescorehundred"];
     [gameState setBool:false forKey:@"movescorethousand"];
-    [gameState setBool:false forKey:@"moveten"];
     [gameState setBool:false forKey:@"movehundred"];
     
     _multiplier = 0;
@@ -119,17 +118,13 @@
         _scoreLabel.position = ccp(_scoreLabel.position.x - 0.01, _scoreLabel.position.y);
         [gameState setBool:true forKey:@"movescoreten"];
     } else if (_score > 100 && [gameState boolForKey:@"movescorehundred"] == false) {
-        _scoreLabel.position = ccp(_scoreLabel.position.x - 0.02, _scoreLabel.position.y);
+        _scoreLabel.position = ccp(_scoreLabel.position.x - 0.03, _scoreLabel.position.y);
         [gameState setBool:true forKey:@"movescorehundred"];
     } else if (_score > 1000 && [gameState boolForKey:@"movescorethousand"] == false) {
-        _scoreLabel.position = ccp(_scoreLabel.position.x - 0.03, _scoreLabel.position.y);
+        _scoreLabel.position = ccp(_scoreLabel.position.x - 0.02, _scoreLabel.position.y);
         [gameState setBool:true forKey:@"movescorethousand"];
     }
-    
-    if (_multiplier == 10 && [gameState boolForKey:@"moveten"] == false) {
-        _xLabel.position = ccp(_xLabel.position.x + 0.02, _xLabel.position.y);
-        [gameState setBool:true forKey:@"moveten"];
-    } else if (_multiplier == 100 && [gameState boolForKey:@"movehundred"] == false) {
+    if (_multiplier == 100 && [gameState boolForKey:@"movehundred"] == false) {
         _xLabel.position = ccp(_xLabel.position.x + 0.02, _xLabel.position.y);
         [gameState setBool:true forKey:@"movehundred"];
     }
