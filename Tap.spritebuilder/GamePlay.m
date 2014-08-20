@@ -48,7 +48,7 @@
     _state = 0;
     _time = 30;
     
-    [self schedule:@selector(changeState) interval:0.5f];
+    [self schedule:@selector(changeState) interval:1.f];
     [self schedule:@selector(timerUpdate) interval:1.f];
 }
 
@@ -100,7 +100,7 @@
     _timer.string = [NSString stringWithFormat:@"%i", _time];
     if (_time < 10) {
         [self unschedule:@selector(changeState)];
-        [self schedule:@selector(changeState) interval:0.25f];
+        [self schedule:@selector(changeState) interval:0.5f];
     }
     if (_time == 0) {
         NSUserDefaults *gameState = [NSUserDefaults standardUserDefaults];
