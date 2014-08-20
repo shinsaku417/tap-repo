@@ -125,7 +125,7 @@
         [gameState setBool:true forKey:@"movescorethousand"];
     }
     if (_multiplier == 100 && [gameState boolForKey:@"movehundred"] == false) {
-        _xLabel.position = ccp(_xLabel.position.x + 0.02, _xLabel.position.y);
+        _multiplierLabel.position = ccp(_multiplierLabel.position.x + 0.02, _multiplierLabel.position.y);
         [gameState setBool:true forKey:@"movehundred"];
     }
 }
