@@ -6,8 +6,7 @@
 ##This game contains scenes with rapidly changing colors. Please take caution if you are affected by epilepsy
 
 ##Gameplay
-* Increase the score by tapping on the side that says "Tap"
-* Tap left when background is white, tap right when background is black
+* Increase the score by tapping on the side that says "Tap" (left when background is white, right when background is black)
 * Build up combo by continuously tapping on the correct side
 
 ## Features
