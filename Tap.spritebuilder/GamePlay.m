@@ -54,10 +54,11 @@
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     //get the x,y coordinates of the touch
     CGPoint touchLocation = [touch locationInNode:self];
+    float touchX = touchLocation.x / self.contentSizeInPoints.width;
     NSLog(@"%f self", self.contentSize.width / 2);
     NSLog(@"%f center", _centerBar.contentSize.width / 2);
     
-    if ((_state == 0 && touchLocation.x < self.contentSize.width / 2 - _centerBar.contentSize.width / 2) || (_state == 1 && touchLocation.x > self.contentSize.width / 2 + _centerBar.contentSize.width / 2)) {
+    if ((_state == 0 && touchX < self.contentSize.width / 2 - _centerBar.contentSize.width / 2) || (_state == 1 && touchX > self.contentSize.width / 2 + _centerBar.contentSize.width / 2)) {
         _multiplier ++;
         _score += _multiplier;
         _multiplierLabel.string = [NSString stringWithFormat:@"%i",_multiplier];
