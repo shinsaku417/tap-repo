@@ -3,6 +3,8 @@
 
 ##Screenshots @ [http://shinuesugi.com/#tap-pro](http://shinuesugi.com/#tap-pro)
 
+##This game contains scenes with rapidly changing colors. Please take caution if you are affected by epilepsy
+
 ##Gameplay
 * Increase the score by tapping on the side that says "Tap"
 * Tap left when background is white, tap right when background is black
