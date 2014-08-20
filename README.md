@@ -1,4 +1,4 @@
-#Tap Pro
+#Tap Pro S
 ##Ultimate Tapping Game
 
 ##Screenshots @ [http://shinuesugi.com/#tap-pro](http://shinuesugi.com/#tap-pro)
